@@ -1,0 +1,6 @@
+.stick_wrapper{
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: var(--main-color-sticker-background);
+    border-radius: 60px;
+}

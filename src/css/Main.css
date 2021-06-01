@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(../assets/Roboto-Regular.ttf) format("truetype");
+}
+
+:root{
+    --main-font-title: ;
+    --main-font-text: "Roboto-Regular" ;
+
+    --main-color-sticker-background: rgba(221, 221, 211, 0.65) ;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:visited{
+    color: initial;
+}
+
+input{
+    outline: none;
+}
+
+button{
+    outline: none;
+    cursor: pointer;
+}
+
+body{
+    margin: 0;
+    font-family: var(--main-font-text);
+}

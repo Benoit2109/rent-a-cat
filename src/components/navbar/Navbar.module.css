@@ -1,0 +1,19 @@
+.nav_menu_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: violet;
+}
+
+.nav_list_wrapper{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 70%;
+}
+
+.nav_menu_wrapper h1{
+    margin-left: 2rem;
+}
