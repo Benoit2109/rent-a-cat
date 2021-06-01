@@ -1,0 +1,10 @@
+.breed_wrapper{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
