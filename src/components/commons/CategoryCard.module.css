@@ -1,0 +1,22 @@
+.catecard_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    width: 100%;
+    
+}
+
+.catecard_wrapper img{
+    width:90%;
+    max-width: 600px;
+}
+
+.catecard_more{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:100%;
+    height: fit-content;
+    margin-bottom: 2rem;
+}

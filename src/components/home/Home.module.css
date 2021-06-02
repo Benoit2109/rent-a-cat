@@ -1,0 +1,17 @@
+.home_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20% 5% 0 5%;
+    width: 90%;
+    height: 100%;
+}
+
+.home_wrapper h1{
+    color: var(--main-color-violet);
+}
+
+.home_wrapper p{
+    text-align: center;
+}
+

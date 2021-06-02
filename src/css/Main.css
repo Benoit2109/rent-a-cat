@@ -8,15 +8,23 @@
     --main-font-text: "Roboto-Regular" ;
 
     --main-color-sticker-background: rgba(221, 221, 211, 0.65) ;
+    --main-color-violet: #a333ff;
+    --main-color-white: white;
+    --main-color-black: black;
 }
 
 a{
     text-decoration: none;
     cursor: pointer;
+    color: var(--main-color-black);
 }
 
 a:visited{
     color: initial;
+}
+
+a:hover{
+    color: var(--main-color-violet);
 }
 
 input{

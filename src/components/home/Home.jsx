@@ -2,24 +2,26 @@ import React from "react";
 import NextButton from "../commons/NextButton";
 import { useHistory } from "react-router-dom";
 
+import styles from "./Home.module.css";
+
 function Home() {
   const history = useHistory();
   const handleAccess = () => {
-    history.push("/allcats");
+    history.push("/races");
   };
   return (
-    <div>
+    <div className={styles.home_wrapper}>
       <h1>RENT-A-CAT</h1>
-      <p>Share the new way of enjoying cats, rent it</p>
+      <p>Vivez une nouvelle expérience avec un chat, louez-le.</p>
       <p>
-        You feel like many of our customers and think that having a full-time
-        cat can be a nightmare?
+        Comme beauoup de nos clients, avoir un chat à temps complet est un
+        cauchemar pour vous?
       </p>
       <p>
-        Just enjoy the best of it, seduce the girl next door on a date and give
-        it back when not needed anymore
+        Profitez du meilleur, donnez vous du style et rendez-le quand vous n'en
+        avez plus besoin.
       </p>
-      <NextButton title="découvrir" handleChoice={() => handleAccess()} />
+      <NextButton title="Découvrir" handleChoice={() => handleAccess()} />
     </div>
   );
 }

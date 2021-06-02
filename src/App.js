@@ -1,11 +1,10 @@
-import React from 'react';
-import Root from './router/Router';
-
+import React from "react";
+import Root from "./router/Router";
 
 function App() {
   return (
     <div>
-      <Root/>
+      <Root />
     </div>
   );
 }

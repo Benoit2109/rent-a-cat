@@ -1,6 +1,14 @@
 .stick_wrapper{
     width: fit-content;
-    padding: 10px 20px;
+    padding: 10px 30px;
     background-color: var(--main-color-sticker-background);
     border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stick_wrapper p{
+    margin: 0;
+    overflow: hidden;
 }

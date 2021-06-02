@@ -1,0 +1,15 @@
+.next_btn{
+    height: 40px;
+    width: fit-content;
+    font-size: 1rem;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    padding: 0 1rem 0 1rem;
+    margin-top: 2rem;
+}
+
+.next_btn:hover{
+    background-color: var(--main-color-violet);
+    color: var(--main-color-white);
+}

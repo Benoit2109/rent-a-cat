@@ -1,0 +1,15 @@
+.menu_wrapper{
+    width: fit-content;
+    padding: 1rem 3rem 1rem 1rem;
+    background-color: var(--main-color-violet);
+}
+
+.menu_wrapper ul{
+    list-style-type: none;
+}
+
+.menu_wrapper li{
+    color: var(--main-color-white);
+    padding: .5rem;
+    font-weight: bold;
+}

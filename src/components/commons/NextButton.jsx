@@ -1,16 +1,21 @@
 import React from "react";
+import styles from "./NextButton.module.css";
 
 function NextButton({ title, handleChoice }) {
   return (
     <div onClick={handleChoice}>
-      <button type="button">{title}</button>
+      <button type="button" className={styles.next_btn}>
+        {title}
+      </button>
     </div>
   );
 }
 
-/** Composant réutilisable bouton, exemple d'utilisation:
+/** Reusable button component.
  *
- *  <NextButton title="découvrir" handleChoice={()=> handleAccess()}/>
+ * Ex:
+ *
+ *  <NextButton title="Découvrir" handleChoice={()=> handleAccess()}/>
  */
 
 export default NextButton;
