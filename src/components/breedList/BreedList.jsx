@@ -21,7 +21,6 @@ function BreedList() {
       })
       .then((res) => res.data)
       .then((data) => {
-          console.log(data)
         const breedNameList = data.map((breed) => breed.image? <CatCard image={breed.image.url} origin={breed.origin} name={breed.name} wiki={breed.wikipedia_url} description={breed.description} id={breed.image.id}/>:"");
         setBreedName(breedNameList);
       });

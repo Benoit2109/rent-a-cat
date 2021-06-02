@@ -24,7 +24,6 @@ function CategoryCard({ image, title, category }) {
       })
       .then((res) => res.data)
       .then((data) => {
-        console.log(data);
         const moreCatCategories = data.map((cat) => (
           <CategoryCard image={cat.url} />
         ));
