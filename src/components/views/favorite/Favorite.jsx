@@ -18,7 +18,7 @@ function Favorite() {
       .get(
         APIurl,
         { headers: { "x-api-key": `${process.env.REACT_APP_API_KEY}` } },
-        { params: { sub_id: "Blebou2109" } }
+        { params: { sub_id: `${process.env.REACT_APP_API_NAME}` } }
       )
       .then((res) => res.data)
       .then((data) => {

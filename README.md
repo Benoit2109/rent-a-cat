@@ -52,6 +52,7 @@ Start the server
 To run this project, you will need to add the following environment variables to your .env file
 
 `REACT_APP_API_KEY`
+`REACT_APP_API_NAME`
 
 to do so if needed go to: https://thecatapi.com/
 

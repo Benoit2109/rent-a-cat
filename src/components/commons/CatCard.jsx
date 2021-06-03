@@ -20,7 +20,7 @@ function CatCard({ image, origin, name, wiki, description, id }) {
   const handleFavorite = (id) => {
     setFavorite(!favorite);
     const APIurl = "https://api.thecatapi.com/v1/favourites";
-    const Data = JSON.stringify({ image_id: id, sub_id: "Blebou2109" });
+    const Data = JSON.stringify({ image_id: id, sub_id: `${process.env.REACT_APP_API_NAME}` });
 
     axios.post(APIurl, Data, {
       headers: {
