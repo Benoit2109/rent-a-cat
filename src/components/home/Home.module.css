@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20% 5% 0 5%;
+    padding: 0% 5% 0 5%;
     width: 90%;
     height: 100vh;
     background-color: var(--main-color-violet-pale);
@@ -18,5 +18,9 @@
 
 .home_wrapper p{
     text-align: center;
+}
+
+.home_wrapper img{
+    width: 30%;
 }
 

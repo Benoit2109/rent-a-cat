@@ -30,9 +30,22 @@ function CategoryCard({ image, title, category }) {
         setMoreCat(moreCatCategories);
       });
   };
+
+  const DivStyles = {
+    "background-image": `url(${image})`,
+    "width": "100%",
+    "max-width":"600px",
+    "height": "500px",
+    "background-position": "center",
+    "background-size": "cover",
+  };
+
   return (
     <div className={styles.catecard_wrapper}>
-      <img src={image} alt="illustration de chat" />
+      <div style={DivStyles}>
+        <img src={image} alt="illustration de chat" />
+      </div>
+
       {title ? <NextButton title={title} handleChoice={handleChoice} /> : ""}
       <div className={styles.catecard_more}>{moreCat ? moreCat : ""}</div>
     </div>
