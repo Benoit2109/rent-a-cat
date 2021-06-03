@@ -51,7 +51,7 @@ function BreedList() {
           content="retrouvez toutes les races de chats et leurs caractéristiques"
         />
       </Helmet>
-      <span id="hautdepage" />
+      
       {breedName}
       <a href="#hautdepage">
         <img className={styles.breed_up} src={up} alt="retour haut de page" />

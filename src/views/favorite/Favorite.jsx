@@ -39,7 +39,7 @@ function Favorite() {
           content="retrouvez toutes vos photos de chats favorites"
         />
       </Helmet>
-      <span id="hautdepage" />
+      
       {allFavourite}
       <a href="#hautdepage">
         <img className={styles.fav_up} src={up} alt="retour haut de page" />

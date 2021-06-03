@@ -9,13 +9,13 @@ import up from "../../assets/up.png";
 
 function Categories() {
   const [categoriesList, setCategoriesList] = useState("");
-  const [categorieCard, setCategorieCard] = useState("");
+  const [categoryCard, setCategoryCard] = useState("");
 
   /**
    * when click on category button, user can see an example of what kind of cat it is and decide to search for more
    */
 
-  const handleCategorie = (id) => {
+  const handleCategory = (id) => {
     const APIurl = `https://api.thecatapi.com/v1/images/search?category_ids=${id}`;
     axios
       .get(APIurl, {
@@ -31,7 +31,7 @@ function Categories() {
             key={cat.id}
           />
         ));
-        setCategorieCard(showCat);
+        setCategoryCard(showCat);
       });
   };
 
@@ -51,7 +51,7 @@ function Categories() {
           <NextButton
             key={cat.name}
             title={cat.name}
-            handleChoice={() => handleCategorie(cat.id)}
+            handleChoice={() => handleCategory(cat.id)}
           />
         ));
         setCategoriesList(categoriesName);
@@ -69,12 +69,12 @@ function Categories() {
           content="retrouvez toutes les photos de chats organisés par catégories"
         />
       </Helmet>
-      <span id="hautdepage" />
+      
       <div className={styles.cat_list}>{categoriesList}</div>
       <div className={styles.cat_pic_wrapper}>
-        {categorieCard ? categorieCard : ""}
+        {categoryCard ? categoryCard : ""}
       </div>
-      {categorieCard ? (
+      {categoryCard ? (
         <a href="#hautdepage">
           <img className={styles.cat_up} src={up} alt="retour haut de page" />
         </a>
