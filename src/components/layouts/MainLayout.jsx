@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Route } from "react-router-dom";
-import Navbar from "../components/navbar/Navbar";
+import Navbar from "../navbar/Navbar";
 
 /**
  * high order component receiving component and using Navbar as layout

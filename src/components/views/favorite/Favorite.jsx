@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Helmet } from "react-helmet";
-import CategoryCard from "../../components/commons/CategoryCard";
+import CategoryCard from "../../commons/CategoryCard";
 
 import styles from "./Favorite.module.css";
-import up from "../../assets/up.png";
+import up from "../../../assets/up.png";
 
 /**
  * Component which display favourite cats set in /races

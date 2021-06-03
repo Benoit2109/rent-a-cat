@@ -1,11 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Switch } from "react-router-dom";
 
-import Home from "../views/home/Home";
-import MainLayout from "../layouts/MainLayout";
-import BreedList from "../views/breedList/BreedList";
-import Categories from "../views/categories/Categories";
-import Favorite from "../views/favorite/Favorite";
+import Home from "../components/views/home/Home";
+import MainLayout from "../components/layouts/MainLayout";
+import BreedList from "../components/views/breedList/BreedList";
+import Categories from "../components/views/categories/Categories";
+import Favorite from "../components/views/favorite/Favorite";
 
 import '../css/Main.css';
 

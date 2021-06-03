@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Helmet } from "react-helmet";
-import NextButton from "../../components/commons/NextButton";
-import CategoryCard from "../../components/commons/CategoryCard";
+import NextButton from "../../commons/NextButton";
+import CategoryCard from "../../commons/CategoryCard";
 
 import styles from "./Categories.module.css";
-import up from "../../assets/up.png";
+import up from "../../../assets/up.png";
 
 function Categories() {
   const [categoriesList, setCategoriesList] = useState("");

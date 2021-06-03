@@ -1,10 +1,10 @@
 import React from "react";
-import NextButton from "../../components/commons/NextButton";
+import NextButton from "../../commons/NextButton";
 import { useHistory } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 import styles from "./Home.module.css";
-import cat from "../../assets/cat.png";
+import cat from "../../../assets/cat.png";
 
 function Home() {
   const history = useHistory();

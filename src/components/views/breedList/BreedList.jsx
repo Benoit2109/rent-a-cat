@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Helmet } from "react-helmet";
-import CatCard from "../../components/commons/CatCard";
+import CatCard from "../../commons/CatCard";
 
 import styles from "./BreedList.module.css";
-import up from "../../assets/up.png";
+import up from "../../../assets/up.png";
 
 function BreedList() {
   const [breedName, setBreedName] = useState([]);
