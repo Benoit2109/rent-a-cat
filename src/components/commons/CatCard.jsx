@@ -31,11 +31,11 @@ function CatCard({ image, origin, name, wiki, description, id }) {
   };
 
   const DivStyles = {
-    "background-image":`url(${image})`,
+    "backgroundImage":`url(${image})`,
     "width": "100%",
     "height": "350px",
-    "background-position": "center",
-    "background-size": "cover",
+    "backgroundPosition": "center",
+    "backgroundSize": "cover",
   };
 
   return (

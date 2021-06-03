@@ -30,6 +30,7 @@ function BreedList() {
               wiki={breed.wikipedia_url}
               description={breed.description}
               id={breed.image.id}
+              key={breed.image.id}
             />
           ) : (
             ""

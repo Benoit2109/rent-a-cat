@@ -23,5 +23,5 @@ export default Stickers;
 
 Stickers.propTypes = {
   title: PropTypes.string.isRequired,
-  link: PropTypes.string.isRequired,
+  link: PropTypes.string,
 };

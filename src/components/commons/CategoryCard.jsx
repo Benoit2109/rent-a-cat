@@ -32,12 +32,12 @@ function CategoryCard({ image, title, category }) {
   };
 
   const DivStyles = {
-    "background-image": `url(${image})`,
+    "backgroundImage": `url(${image})`,
     "width": "100%",
-    "max-width":"600px",
+    "maxWidth":"600px",
     "height": "500px",
-    "background-position": "center",
-    "background-size": "cover",
+    "backgroundPosition": "center",
+    "backgroundSize": "cover",
   };
 
   return (

@@ -48,6 +48,7 @@ function Categories() {
       .then((data) => {
         const categoriesName = data.map((cat) => (
           <NextButton
+            key={cat.name}
             title={cat.name}
             handleChoice={() => handleCategorie(cat.id)}
           />
@@ -55,6 +56,7 @@ function Categories() {
         setCategoriesList(categoriesName);
       });
   }, []);
+
   return (
     <div className={styles.cat_wrapper}>
       <balise id="hautdepage" />
