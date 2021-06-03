@@ -41,7 +41,7 @@ function BreedList() {
   }, []);
   return (
     <div className={styles.breed_wrapper}>
-      <balise id="hautdepage" />
+      <span id="hautdepage" />
       {breedName}
       <a href="#hautdepage">
         <img className={styles.breed_up} src={up} alt="retour haut de page" />

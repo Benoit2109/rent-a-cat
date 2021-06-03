@@ -59,7 +59,7 @@ function Categories() {
 
   return (
     <div className={styles.cat_wrapper}>
-      <balise id="hautdepage" />
+      <span id="hautdepage" />
       <div className={styles.cat_list}>{categoriesList}</div>
       <div className={styles.cat_pic_wrapper}>
         {categorieCard ? categorieCard : ""}

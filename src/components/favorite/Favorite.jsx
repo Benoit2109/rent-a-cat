@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import styles from "./Favorite.module.css";
 import CategoryCard from "../commons/CategoryCard";
+
+import styles from "./Favorite.module.css";
+import up from "../../assets/up.png";
 
 /**
  * Component which display favourite cats set in /races
@@ -25,7 +27,15 @@ function Favorite() {
         setAllFavourite(FavouriteList);
       });
   }, []);
-  return <div className={styles.fav_wrapper}>{allFavourite}</div>;
+  return (
+    <div className={styles.fav_wrapper}>
+      <span id="hautdepage" />
+      {allFavourite}
+      <a href="#hautdepage">
+        <img className={styles.fav_up} src={up} alt="retour haut de page" />
+      </a>
+    </div>
+  );
 }
 
 export default Favorite;
