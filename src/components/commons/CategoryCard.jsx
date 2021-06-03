@@ -25,7 +25,7 @@ function CategoryCard({ image, title, category }) {
       .then((res) => res.data)
       .then((data) => {
         const moreCatCategories = data.map((cat) => (
-          <CategoryCard image={cat.url} />
+          <CategoryCard image={cat.url} key={cat.id}/>
         ));
         setMoreCat(moreCatCategories);
       });
@@ -55,7 +55,7 @@ function CategoryCard({ image, title, category }) {
 export default CategoryCard;
 
 CategoryCard.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   image: PropTypes.string.isRequired,
-  category: PropTypes.number.isRequired,
+  category: PropTypes.number,
 };
