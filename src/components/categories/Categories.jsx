@@ -27,6 +27,7 @@ function Categories() {
             image={cat.url}
             title="voir plus"
             category={cat.categories[0].id}
+            key={cat.id}
           />
         ));
         setCategorieCard(showCat);
