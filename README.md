@@ -8,6 +8,17 @@ Une application qui permettra de louer un chat pour se donner un genre et le ren
 
 ![App Screenshot](https://i.imgur.com/RqsUE4V.png)
 
+
+## Dependancies
+
+    - axios: ^0.21.1,
+    - prop-types: ^15.7.2,
+    - react: ^17.0.2,
+    - react-css-modules: ^4.7.11,
+    - react-dom: ^17.0.2,
+    - react-helmet: ^6.1.0,
+    - react-router-dom: ^5.2.0,
+
   
 ## Run Locally
 

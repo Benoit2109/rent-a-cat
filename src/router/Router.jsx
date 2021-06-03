@@ -10,10 +10,6 @@ import Favorite from "../views/favorite/Favorite";
 import '../css/Main.css';
 
 
-
-
-
-
 const Root = () => (
   <Router>
     <Switch>
