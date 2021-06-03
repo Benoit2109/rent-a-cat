@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import NextButton from "../commons/NextButton";
-import CategoryCard from "../commons/CategoryCard";
+import { Helmet } from "react-helmet";
+import NextButton from "../../components/commons/NextButton";
+import CategoryCard from "../../components/commons/CategoryCard";
 
 import styles from "./Categories.module.css";
 import up from "../../assets/up.png";
@@ -59,6 +60,15 @@ function Categories() {
 
   return (
     <div className={styles.cat_wrapper}>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Catégories</title>
+        <meta name="author" content="Benoit Le Bourdonnec" />
+        <meta
+          name="Description"
+          content="retrouvez toutes les photos de chats organisés par catégories"
+        />
+      </Helmet>
       <span id="hautdepage" />
       <div className={styles.cat_list}>{categoriesList}</div>
       <div className={styles.cat_pic_wrapper}>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import CategoryCard from "../commons/CategoryCard";
+import { Helmet } from "react-helmet";
+import CategoryCard from "../../components/commons/CategoryCard";
 
 import styles from "./Favorite.module.css";
 import up from "../../assets/up.png";
@@ -29,6 +30,15 @@ function Favorite() {
   }, []);
   return (
     <div className={styles.fav_wrapper}>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Favoris</title>
+        <meta name="author" content="Benoit Le Bourdonnec" />
+        <meta
+          name="Description"
+          content="retrouvez toutes vos photos de chats favorites"
+        />
+      </Helmet>
       <span id="hautdepage" />
       {allFavourite}
       <a href="#hautdepage">

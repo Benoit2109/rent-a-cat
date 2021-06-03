@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import CatCard from "../commons/CatCard";
+import { Helmet } from "react-helmet";
+import CatCard from "../../components/commons/CatCard";
 
 import styles from "./BreedList.module.css";
 import up from "../../assets/up.png";
@@ -41,6 +42,15 @@ function BreedList() {
   }, []);
   return (
     <div className={styles.breed_wrapper}>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Races</title>
+        <meta name="author" content="Benoit Le Bourdonnec" />
+        <meta
+          name="Description"
+          content="retrouvez toutes les races de chats et leurs caractéristiques"
+        />
+      </Helmet>
       <span id="hautdepage" />
       {breedName}
       <a href="#hautdepage">
