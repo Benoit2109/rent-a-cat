@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CatCard from "../commons/CatCard";
 
-import styles from './BreedList.module.css';
+import styles from "./BreedList.module.css";
 import up from "../../assets/up.png";
 
 function BreedList() {
@@ -21,16 +21,30 @@ function BreedList() {
       })
       .then((res) => res.data)
       .then((data) => {
-          console.log(data)
-        const breedNameList = data.map((breed) => breed.image?.url? <CatCard image={breed.image.url} origin={breed.origin} name={breed.name} wiki={breed.wikipedia_url} description={breed.description} id={breed.image.id}/>:"");
+        const breedNameList = data.map((breed) =>
+          breed.image?.url ? (
+            <CatCard
+              image={breed.image.url}
+              origin={breed.origin}
+              name={breed.name}
+              wiki={breed.wikipedia_url}
+              description={breed.description}
+              id={breed.image.id}
+            />
+          ) : (
+            ""
+          )
+        );
         setBreedName(breedNameList);
       });
   }, []);
   return (
     <div className={styles.breed_wrapper}>
-        <balise id="hautdepage"/>
-        {breedName}
-        <a href="#hautdepage"><img className={styles.breed_up} src={up} alt="retour haut de page" /></a>
+      <balise id="hautdepage" />
+      {breedName}
+      <a href="#hautdepage">
+        <img className={styles.breed_up} src={up} alt="retour haut de page" />
+      </a>
     </div>
   );
 }

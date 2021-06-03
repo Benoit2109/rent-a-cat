@@ -6,11 +6,15 @@
     max-width: 400px;
     height: fit-content;
     border-radius: 0 0 20px 20px;
-    border: solid 1px var(--main-color-violet);
+    border: solid 1px var(--main-color-sticker-background);
     margin: 2rem;
     position: relative;
     z-index: 0;
-    box-shadow: 0px 2px 2px 2px var(--main-color-pal) ;
+    box-shadow: 0px 2px 2px 2px var(--main-color-sticker-background) ;
+}
+
+.card_wrapper strong{
+    color: var(--main-color-violet);
 }
 
 .card_illustration{
@@ -35,5 +39,5 @@
     height: 20px;
     width: 20px;
     top: 365px;
-    left: 350px;
+    left: 90%;
 }

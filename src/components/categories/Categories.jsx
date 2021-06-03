@@ -15,7 +15,6 @@ function Categories() {
    */
 
   const handleCategorie = (id) => {
-    console.log(id);
     const APIurl = `https://api.thecatapi.com/v1/images/search?category_ids=${id}`;
     axios
       .get(APIurl, {
