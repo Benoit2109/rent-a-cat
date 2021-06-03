@@ -31,9 +31,20 @@ function CatCard({ image, origin, name, wiki, description, id }) {
     });
   };
 
+  const DivStyles = {
+    "background-image":`url(${image})`,
+    "width": "100%",
+    "height": "350px",
+    "background-position": "center",
+    "background-size": "cover",
+  };
+
   return (
     <div className={styles.card_wrapper}>
-      <img className={styles.card_illustration} src={image} alt={name} />
+      <div style={DivStyles}>
+        <img className={styles.card_illustration} src={image} alt={name} />
+      </div>
+
       <p>
         <strong>{name}</strong>
       </p>
